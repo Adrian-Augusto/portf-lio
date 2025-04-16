@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Efeito de estrelas caindo -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="profile-container">
+                <img src="Screenshot_2025-01-31-23-21-34-016_com.instagram.android.jpg" alt="Minha Foto" class="profile-img">
+                <div class="profile-info">
+                    <div class="textos">
+                        <h2>Adrian Augusto</h2>
+                        <p><strong>Programador Java</strong><br>
+                        Desenvolvedor em formação com foco em back-end. <br>
+                        Construindo uma base sólida em lógica de programação, estruturas de dados, APIs RESTful e bancos de dados.</p>
+                        <p>Cursando Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                    
+                    <a href="curriculo.pdf.pdf" class="download-btn" download="Curriculo_2025.pdf">
+                        <i class="fas fa-download"></i> Baixar Currículo
+                      </a>
+                      
+                </div>
+            </div>
+            <footer>
+        
+                <div class="social-links">
+                    <a href="https://github.com/Adrian-Augusto" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adrian-augusto-110481250/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </footer>
+        </header>
+
+        <!-- Seção de Soft Skills -->
+        <section class="soft-skills">
+            <h2 class="section-title">Soft Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <div class="skill-name">Trabalho em Equipe</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="skill-name">Criatividade</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                    <div class="skill-name">Comunicação</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-clock"></i></div>
+                    <div class="skill-name">Gestão de Tempo</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="skill-name">Organização</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <div class="skill-name">Resolução de Problemas</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="soft-skills">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="icons8-java-96.png" alt="">
+                </div>
+                <div class="skill-item">
+                    
+                    <img src="icons8-spring-boot-96.png" alt="">
+
+                </div>
+                <div class="skill-item">
+        
+                    <img src="icons8-mysql-48.png" alt="">
+
+                </div>
+              
+              
+                </div>
+            </div>
+        </section>
+ 
+
+        <!-- Seção de Projetos -->
+        <section class="projects">
+            <h2>Projetos</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-title">Spring Store
+</div>
+                
+                    <a href="Projeto1.html" class="project-link">Ver Projeto</a>
+                </div>
+                <div class="project-item">
+                    <div class=" 💰 Sistema Bancário em Java">Projeto 2</div>
+                   
+                    <a href="Projeto2.html" class="project-link">Ver Projeto</a>
+                </div>
+         
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Função para gerar estrelas caindo
+        function createStars() {
+            for (let i = 0; i < 100; i++) {
+                let star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                document.getElementById('stars').appendChild(star);
+            }
+        }
+
+        createStars();
+    </script>
+</body>
+</html>
