@@ -2,15 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', Verdana, Geneva, Tahoma, sans-serif;
+     scrollbar-width: none; /* Firefox */
+     -ms-overflow-style: none;  /* Internet Explorer e Edge antigos */
+     
+
 }
 
 body {
-    background: linear-gradient(to bottom, #0a0a0a, #100e20, #24243e);
+
+    background: linear-gradient(to bottom, #000000, #000000, #05050e);
     color: #fff;
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
+    
 }
 
 /* Efeito de estrelas caindo */
@@ -102,9 +108,10 @@ header {
 }
 
 .download-btn {
+
     display: inline-block;
     padding: 12px 30px;
-    background: linear-gradient(45deg, #a7abee, #8f94fb);
+    background: linear-gradient(45deg, #4f5286, #1968a8);
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -116,7 +123,7 @@ header {
 .download-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #8f94fb, #4e54c8);
+    background: linear-gradient(45deg, #171e97, #1968a8);
 }
 
 /* Seção de Soft Skills */
@@ -140,7 +147,7 @@ header {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    background: linear-gradient(to right, #0c5599, #8f94fb);
 }
 
 .skills-container {
@@ -170,7 +177,7 @@ header {
 .skill-icon {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #8f94fb;
+    color: #2681b6;
 }
 
 .skill-name {
@@ -199,7 +206,7 @@ header {
 .projects {
     padding: 40px 0;
     text-align: center;
-    background: #1c1c3c;
+    background: #0d0d1a;
 }
 
 .projects h2 {
@@ -226,7 +233,7 @@ header {
 
 .project-item:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(104, 99, 99, 0.2);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -241,13 +248,14 @@ header {
 }
 
 .project-link {
-    color: #8f94fb;
+    color: #e3e3e6;
     text-decoration: none;
     font-weight: bold;
 }
 
 /* Rodapé */
 footer {
+
     text-align: center;
     padding: 30px 0;
     margin-top: 50px;
@@ -324,4 +332,5 @@ footer {
         flex-direction: column;
           margin-left: 30px;
     }
+    
 }
